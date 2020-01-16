@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(49, 47, 47);
+}
+
+input {
+    border-radius: 5px;
+}
+
+.presImg {
+    height: 218px;
+    width: 175px;
+}
+
+.toolTipText {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#rgtBtn:hover .toolTipText, #lftBtn:hover .toolTipText {
+    visibility: visible;
+    opacity: 1;
+}
+
+#banner {
+    text-align: center;
+    color: white;
+}
+
+#container {
+    display: flex;
+    justify-content: left;
+    justify-content: center;
+    margin: 1.5% auto auto auto;
+    text-align: center;
+}
+
+#carousel {
+    /* display: flex;
+    justify-content: center; */
+    /* margin: 0 auto 0 auto; */
+    width: 525px;
+    height: 218px;
+    overflow: hidden;
+}
+
+#pres {
+    position: relative;
+    display: inline-block;
+    height: 218px;
+    width: 1750px;
+    /* animation-name: test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+}
+
+/* @keyframes test {
+    0% {left: 0px; top: 0px;}
+    10% {left: -500px; top: 28px;}
+    30% {left: -250px; top: -17px;}
+    50% {left: -800px; top: -37px;}
+    70% {left: -487px; top: 15px;}
+    80% {left: -666px; top: 36px;}
+    100% {left: 0px; top: 0px}
+} */
+
+#lftBtn {
+    margin: auto 10px auto 0;
+}
+
+#rgtBtn {
+    margin: auto 0 auto 10px;
+}
+
+#lftBtn, #rgtBtn {
+    width: 24px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(189, 189, 189);
+    border: solid black 2px;
+}
+
+#display {
+    margin: 25px auto 0px auto;
+    text-align: center;
+}
+
+#jumbotron {
+    height: 436px;
+    width: 350px;
+}
+
+::selection {
+    background-color: transparent;
+    color: #000;
+}
+
+#buttons {
+    margin: 30px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    width: 30%;
+}

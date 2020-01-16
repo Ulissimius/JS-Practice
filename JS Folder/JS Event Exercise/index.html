@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="banner">
+        <h1>10 Presidents of the United States</h1>
+    </div>
+    <div id="container">
+        <div id="lftBtn">
+            <h1>&#60;</h1><span class="toolTipText">Scroll left</span>
+        </div>
+        <div id="carousel">
+            <div id="pres" style="left: 0;"></div>
+        </div>
+        <div id="rgtBtn">
+            <h1>&#62;</h1><span class="toolTipText">Scroll Right</span>
+        </div>
+    </div>
+    <div id="buttons">
+        <input type="button" value="Interesting" onclick="alert('Interesting')">
+        <input type="button" value="Not Interesting" onclick="alert('Not Interesting')">
+        <input type="button" value="Meh" onclick="alert('Meh')">
+    </div>
+    <div id="display">
+        <img id="jumbotron" src="" alt="">
+    </div>
+</body>
+
+</html>
+
+<script>
+    function jumbotronLoad(a) {
+        jumbotron.setAttribute("src", a.getAttribute("src"))
+    }
+</script>
+
+<script src="js.js"></script>

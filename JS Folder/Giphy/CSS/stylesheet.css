@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+#container {
+    width: 90%;
+    margin-top: 1.5%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#featured {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+#searchBar {
+    margin-bottom: 10px;
+}
+
+#searchRes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#limit {
+    width: 30px;
+}
+
+#ldmr {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fGif {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fImg {
+    height: 140px;
+}

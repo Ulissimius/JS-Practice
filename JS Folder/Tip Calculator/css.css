@@ -1,0 +1,58 @@
+body {
+    background: url("trees.png") repeat center center fixed;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 5px dotted black;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height: auto;
+    animation-name: rainbow;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbow {
+    0% {border-color: crimson;}
+    0% {background-color: green;}
+    33% {border-color: green;}
+    33% {background-color: crimson;}
+    66% {border-color: crimson;}
+    66% {background-color: slateblue;}
+    100% {border-color: crimson;}
+    100% {background-color: green;}
+}
+
+#total {
+    width: 50%;
+}
+
+#spc {
+    width: 51.25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flxIn {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#numPpl {
+    width: 25%;
+}

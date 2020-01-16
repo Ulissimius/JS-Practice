@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id="bodyId">
+    <script>
+        //-----------------------------------------------------------
+        //#1
+        let usrInput = prompt('What is the "official" name of JavaScript?', '');
+        if (usrInput == 'ECMAScript') {
+            var usrOutput = "Right!"
+        } else {
+            usrOutput = "Didn't know? ECMAScript!"
+        }
+        pCreate(usrOutput)
+
+        function pCreate(data) {
+            var para = document.createElement("p");
+            var node = document.createTextNode(data);
+            para.appendChild(node);
+        
+            var element = document.getElementById("bodyId");
+            element.appendChild(para);
+        }
+    </script>
+</body>
+</html>
+<!-- <script src="jscript.js"></script> -->
