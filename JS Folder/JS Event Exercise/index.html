@@ -14,22 +14,27 @@
     <div id="banner">
         <h1>10 Presidents of the United States</h1>
     </div>
+
     <div id="container">
         <div id="lftBtn">
             <h1>&#60;</h1><span class="toolTipText">Scroll left</span>
         </div>
+
         <div id="carousel">
             <div id="pres" style="left: 0;"></div>
         </div>
+
         <div id="rgtBtn">
             <h1>&#62;</h1><span class="toolTipText">Scroll Right</span>
         </div>
     </div>
+
     <div id="buttons">
         <input type="button" value="Interesting" onclick="alert('Interesting')">
         <input type="button" value="Not Interesting" onclick="alert('Not Interesting')">
         <input type="button" value="Meh" onclick="alert('Meh')">
     </div>
+
     <div id="display">
         <img id="jumbotron" src="" alt="">
     </div>
@@ -38,9 +43,7 @@
 </html>
 
 <script>
-    function jumbotronLoad(a) {
-        jumbotron.setAttribute("src", a.getAttribute("src"))
-    }
+    function jumbotronLoad(a) { jumbotron.setAttribute("src", a.getAttribute("src")) }
 </script>
 
 <script src="js.js"></script>
