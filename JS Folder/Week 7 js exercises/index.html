@@ -1,0 +1,41 @@
+<script>
+    //--------------------Task 1--------------------
+    calculateDogAge(15)
+    calculateDogAge(10)
+    calculateDogAge(15, 15)
+
+    function calculateDogAge(age, revAge) {
+        const rate = 7
+        
+        if (typeof revAge !== "undefined") {
+            return alert('Your doggie is ' + (age * rate) + ' years old in dog years!\nYour doggie is ' + (revAge / 7) + ' years old in human years!')
+        } else {
+            return alert('Your doggie is ' + (age * rate) + ' years old in dog years!')
+        }
+    }
+
+    //--------------------Task 2--------------------
+    calculateSupply(50, 2)
+    calculateSupply(25, 3)
+    calculateSupply(75, 1.58)
+
+    function calculateSupply(age, amount) {
+        const maxAge = 100
+        const years = 365
+        age = Math.round((((maxAge-age) * years) * amount))
+
+        return alert("You will need " + age + " more snacks to last you until the ripe old age of " + maxAge + ".")
+    }
+
+    //--------------------Task 3--------------------
+    celsiusToFahrenheit(100)
+    fahrenheitToCelsius(100)
+
+    function celsiusToFahrenheit(cels) {
+        return alert("Celsius " + cels + "°C -> Fahrenheit " + (cels * 1.8 + 32) + "°F")
+    }
+
+    function fahrenheitToCelsius(fahr) {
+        return alert("Fahrenheit " + fahr + "°F -> Celsius " + (5 / 9 * (fahr - 32)) + "°C")
+    }
+</script>

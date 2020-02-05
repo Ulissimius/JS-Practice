@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" name="myform">
+        Email: <input type="email" name="email">
+        Confirm Email: <input type="email" name="emailconf">
+        <input type="submit" value="Submit" onclick="validateEmail()">
+    </form>
+</body>
+</html>
+
+<script>
+    function validateEmail() 
+    {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myform.email.value))
+        {
+            return (true)
+        } else {
+            alert("You have entered an invalid email address!")
+            return (false)
+        }
+    }
+</script>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="fl" onsubmit="matchpass()">
+        password: <input type="password" name="password"><br>
+        Re-enter Password: <input type="password" name=password2><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<script>
+    function matchpass() {
+        var newVar = document.fl.password.value
+
+        if (newVar == document.fl.password2.value) {
+            alert("You're in.")
+        } else {
+            alert("You're out.")
+        }
+    }
+</script> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" action="" method="post">
+    Name: <input type="text" name="name" class="name" value="something new"><br>
+    Password: <input type="password" name="password" class="password" ><br>
+    <input type="button" value="Submit" onclick="validateForm()">
+</form>
+</body>
+</html>
+<script>
+    function validateForm() {
+        var nm = document.myform.name.value
+        var pass = document.myform.password.value
+
+        if (nm == null || nm == "") {
+            alert("Name can't be black")
+            return false
+        } else if (pass.length < 6) {
+            alert("Password must be at least 6 cahracters long.")
+            return false
+        }
+    }
+</script> -->
