@@ -1,0 +1,130 @@
+/********** Main Content **********/
+body {
+    background-image: url("../images/background.jpg");
+    background-size: 200px 200px;
+    background-repeat: repeat;
+}
+
+#body-content {
+    width: 1024px;
+    min-height: 100vh;
+    padding-bottom: 15px;
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title-area {
+    width: 100%;
+    justify-content: center;
+}
+/********** End Main Content **********/
+
+/********** Search Area **********/
+.search-area {
+    justify-content: center;
+    width: 50%;
+    margin: 10px auto 0px auto;
+    padding-top: 10px;
+}
+
+.search-btn {
+    height: 100%;
+    border: solid rgba(0, 0, 0, 0.6) 2px;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#place {
+    /* border-right: none; */
+    border: solid rgba(0, 0, 0, 0.6) 2px;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#name {
+    border: solid rgba(0, 0, 0, 0.6) 2px;
+    border-left: none;
+    border-right: none;
+}
+
+#sort {
+    height: 100%;
+    margin: 0px 5px;
+}
+/********** End Search Area **********/
+
+/********** Start Card **********/
+#content {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 250px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.80);
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.45);
+}
+
+.card-container {
+    flex-grow: 1;
+    padding: 2px 16px;
+    background-color: bisque;
+}
+
+.card-img {
+    display: block;
+    margin:0 auto;
+    height: 250px;
+    max-width: 100%;
+    box-sizing: border-box
+}
+
+.card-hours-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-hours, .card-rating {
+    margin: 7.5px 0px;
+}
+
+.card-title {
+    text-align: center;
+}
+/********** End Card **********/
+
+/********** Other **********/
+.flex {
+    display: flex;
+}
+
+#spacer {
+    border: solid rgba(0, 0, 0, 0.6) 2px;
+    border-left: none;
+    border-right: none;
+    width: .5px;
+}
+
+.shadow-div {
+    margin: 0px;
+    padding: 0px;
+}
+
+.visible {
+    display: none;
+}
+/********** End Other **********/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="body-content">
+        <div id="title-area" class="flex">
+            <h1>Zomato Tomato Reviews</h1>
+        </div>
+        <div class="flex search-area">
+            <div>
+                <select id="sort">
+                    <option value="cost">Cost</option>
+                    <option value="rating" selected>Rating</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" name="textme" placeholder="Location" id="place" class="search-txt">
+            </div>
+            <div>
+                <input type="text" name="space" id="spacer" class="search-txt" disabled>
+            </div>
+            <div>
+                <input type="text" name="textme" placeholder="Restaurant Name" id="name" class="search-txt"><input type="button" value="Search" id="submitbtn" class="search-btn">
+            </div>
+        </div>
+        <div id="content">
+            
+        </div>
+    </div>
+</body>
+
+<script src="./JS/API.js"></script>
+</html>
